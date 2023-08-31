@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+body {
+  background-color: #D5FFD0;
+  color: #0C356A;
+  font-family: Merriweather, serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.info-card {
+  max-width: 600px;
+  width: 90%;
+  border: 2px solid #279EFF;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 50px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #40F8FF;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  font-family: Montserrat, sans-serif;
+}
+
+/* ... existing CSS ... */
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info-label {
+  flex: 0 0 120px;
+  text-align: right;
+  padding-right: 16px;
+}
+
+.info-card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transform: scale(1.05);
+}
+
+.title-box,
+.info-box {
+  border: 2px solid #96C291;
+  border-radius: 10px; /* Rounded corners for boxes */
+  margin: 10px;
+  padding: 10px;
+}
+
+button {
+  background-color: #FFB7B7;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;  /* Rounded corners for button */
+  margin-top: 10px;  /* Add some margin to the top of the button */
+}
+
+button:hover {
+  background-color: #FF9595;
+}
+
+#extra-info h2,
+#extra-info p {
+  margin-top: 16px;
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 768px) {
+  .info-card {
+    width: 100%;
+  }
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.project-card {
+    background-color: #0C356A;
+    color: #D5FFD0;
+    border-radius: 10px;
+    padding: 16px;
+}
+.skill-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.skill-label {
+  font-weight: bold;
+  width: 100px; /* Setting a fixed width for the skill name */
+  text-align: right;
+  padding-right: 16px; /* Add some padding between the label and the bar */
+}
+
+.skill-bar {
+  flex-grow: 1;
+  height: 12px;
+  border-radius: 8px;
+  background-color: #D5FFD0;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-level {
+  height: 100%;
+  border-radius: 8px;
+  background-color: #279EFF;
+  position: absolute;
+}
+
